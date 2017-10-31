@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'bootstrap-sass'
-
+gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem "rolify"
 
 
 group :development, :test do

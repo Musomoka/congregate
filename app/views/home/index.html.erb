@@ -1,1 +1,6 @@
 <h1>Welcome to Church</h1>
+<h3>
+	<%if user_signed_in? %> 
+	<%=current_user.email%>
+	<%end%>
+</h3>
