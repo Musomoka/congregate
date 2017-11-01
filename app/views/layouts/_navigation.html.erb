@@ -11,9 +11,12 @@
         </a>
       </div>
       <div id="navbar8" class="navbar-collapse collapse">
+      	<ul class="nav navbar-nav navbar-left">
+      		<li><%=image_tag("/assets/logos/cfi_logo.png", id: "logo")%></li>
+      		</ul>
         <ul class="nav navbar-nav navbar-right">
         <%if user_signed_in? %> 
-        	<li><%= image_tag("images\logos\cfi_logo.png") %></li>
+        	
           	<li><%=link_to"Sign Out", destroy_user_session_path, method: :delete%></a></li>
          	<li><%= link_to current_user.email, edit_user_registration_path%>
          <% end%>

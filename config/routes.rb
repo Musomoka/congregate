@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sermons
   get 'about/help'
 
   devise_for :users

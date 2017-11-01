@@ -11,6 +11,9 @@
  * It is generally better to create a new file per style scope.
  *
 *= require devise_bootstrap_views
+* = require custom
+* = require signin
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
